@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Poppins', 'Courier New';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img-1 {
+  width: 50px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Table-container {
+  background-color: #252525;
+  color: aliceblue;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+tbody {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-self: center;
+  row-gap: 30px;
+  padding-left: 9rem;
 }
 
-.App-link {
-  color: #61dafb;
+.main-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 75px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  padding-top: 10px;
+}
+
+.fa-solid {
+  background-color: #001880;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+.fa-solid:hover {
+  cursor: pointer;
+  background-color: #0221ab;
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+}
+
+tbody>tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 90px;
+}
+
+.product-btns {
+  display: flex;
+  align-items: flex-end;
+}
+
+.product-btn {
+  padding: 10px;
+  margin-left: 10px;
+  background-color: teal;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+button {
+  background: transparent;
+  border: none;
+  color: aliceblue;
+}
+
+button>.product-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
